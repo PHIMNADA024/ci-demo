@@ -1,3 +1,5 @@
+[![Run flake8](https://github.com/PHIMNADA024/ci-demo/actions/workflows/style-checking.yml/badge.svg)](https://github.com/PHIMNADA024/ci-demo/actions/workflows/style-checking.yml) 
+[![Run Unit Test](https://github.com/PHIMNADA024/ci-demo/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/PHIMNADA024/ci-demo/actions/workflows/python-unittest.yml)
 Continuous Integration Demo
 ===========================
 
