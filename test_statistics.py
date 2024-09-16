@@ -1,6 +1,6 @@
 """Use to test the module for calculating statistical data."""
 from unittest import TestCase
-from statistics import variance, stdev
+from statistics import average, variance, stdev
 from math import sqrt
 
 
@@ -29,7 +29,12 @@ class StatisticsTest(TestCase):
         # variance([0, 0.5, 1, 1.5, 2.0]) is 0.5
         self.assertEqual(sqrt(0.5), stdev([0, 0.5, 1, 1.5, 2]))
 
+    def test_average_empty_list(self):
+        """Test that average raises ValueError for an empty list."""
+        with self.assertRaises(ValueError):
+            average([])
 
-if __name__ == '__main__':
-    import unittest
-    unittest.main(verbosity=1)
+    def test_variance_empty_list(self):
+        """Test that variance raises ValueError for an empty list."""
+        with self.assertRaises(ValueError):
+            variance([])
