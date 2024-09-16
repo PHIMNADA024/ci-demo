@@ -1,0 +1,6 @@
+[run]
+branch = True
+cover_pylib = False
+include =
+    statistics.py
+    test_statistics.py
